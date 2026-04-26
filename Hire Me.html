@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SAQLAIN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ffde00; 
+            --secondary: #ffffff; 
+            --bg-dark: #020617;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background: radial-gradient(circle at top right, #1e1b4b, #020617 60%);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; width: 100%; padding: 20px 8%;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo { 
+            font-family: 'Orbitron', sans-serif; 
+            font-size: 1.8rem; 
+            font-weight: 900; 
+            color: var(--primary); 
+            text-decoration: none; 
+        }
+
+        .logo span { color: #fff; }
+
+        .nav-links a { 
+            color: #fff; 
+            text-decoration: none; 
+            margin-left: 30px; 
+            font-weight: 700; 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            transition: 0.3s; 
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        
+        .section-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px 60px; 
+        }
+
+        #contact {
+            text-align: center; 
+            background: rgba(17, 17, 17, 0.6); 
+            padding: 80px 40px; 
+            border-radius: 40px; 
+            border: 1px solid var(--primary);
+            max-width: 900px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive; 
+            font-size: clamp(3rem, 10vw, 5rem);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px; 
+            opacity: 0.7;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: var(--primary); 
+            color: #111; 
+            padding: 20px 50px; 
+            border-radius: 50px; 
+            font-weight: 900; 
+            text-decoration: none; 
+            font-size: 1.2rem; 
+            display: inline-block;
+            transition: var(--transition);
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 222, 0, 0.3);
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home" class="logo">SAQ<span>LAIN</span></a>
+    <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="Projects.html">Projects</a>
+        <a href="About.html">About</a>
+        <a href="Hire Me.html">Hire Me</a>
+    </div>
+</nav>
+
+<div class="section-wrapper">
+    <section id="contact">
+        <h1>Order Your <br>Growth.</h1>
+        <p>Directly linked to my Fiverr Pro gig for your protection and convenience.</p>
+        <a href="YOUR_FIVERR_LINK" target="_blank" class="cta-button">Get Started on Fiverr</a>
+    </section>
+</div>
+
+</body>
+</html>
